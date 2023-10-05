@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+<body class="bg-gray-50 text-gray-600">
+    <!--Header-->
+    <div>
+        <div class="container mx-auto max-w-5xl px-4 h-28 flex items-center">
+            <div class="font-black flex flex-col justify-center ">
+                <img src="../img/logo.png" class="h-16 w-16">
+                <h2>Js Turismo</h2>
+            </div>
+            <ul class="ml-auto flex items-center space-x-3">
+                <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a>
+                </li>
+                <li>
+                    <a href=""class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a>
+                </li>
+                <li>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/Header-->
+    
+
+    <!--banner-->
+        <div style="background: url('../img/hero-image-1.png'); height: 450px">
+            <div class="container h-full mx-auto max-w-5xl px-4 flex items-center justify-center">
+                <div>
+                    <div class="text-center" >
+                        <h1 class="text-gray-200 text-3xl mb-2">Onde você quer ir?</h1>
+                        <p class="text-green-100">Escolha o estado e cidade para achar os melhores resorts.</p>
+                    </div>
+                    
+                    <div class="mt-7">
+                        <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                            <select id="estadoselect" name="estado" class="cursor-pointer bg-grey-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                                <option value="">
+                                    Escolha estado
+                                </option>
+                            </select>
+                            <select id="cidadeselect" name="cidade" class="cursor-pointer bg-gray-50 px-3 py-2 border border-gay-300 rounded text-gray-500" >
+                                <option value="">
+                                    Escolha cidade
+                                </option>
+                            </select>
+                            <button class="hover:bg-yellow-300 col-span-2 lg:col-span-1 inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                                </svg>
+                                Pesquisar resorts
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--/banner-->
+
+    <!--feature resort-->
+    <div>
+        <div class="container mx-auto max-w-5xl px-4 py-20">  
+            <div class="flex flex-col-reverse lg:flex-row">
+                <div class="lg:pr-10">
+                    <div class="text-sm text-gay-300 font-semibold" >RESORT EM DESTAQUE</div>
+                    <div class="text-2xl text-gray-600 ">Ecoresort Praia do Forte Bahia</div>
+                    <div class="text-sm text-gray-300 font-medium mt-2">Hotel quelidade 5 estrelas</div>
+                    <div class="text-sm text-gray-300 font-medium mt-4">
+                        <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem unde amet excepturi saepe quaerat eum odit, animi laborum beatae vitae sapiente omnis fuga adipisci. Dignissimos numquam impedit distinctio ullam voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt incidunt molestias dolores, voluptate eius quia veritatis natus, quam quasi, animi beatae eos porro! Quaerat laboriosam dolore soluta officia exercitationem voluptatibus?</p>
+                        
+                        <div class="mt-4">
+                            <a class="cursor-pointer hover:bg-yellow-300 inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded mt-5">
+                                Solicitar Reserva
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                                </svg>
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:ml-auto flex-shrink-0 mb-5 lg:mb-0 ">
+                    <img class="rounded-md" src="../img/bahia-resort.jpg" alt="" width="450">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/feature resort-->
+
+    <!--grid photos-->
+    <div>
+        <div class="container mx-auto max-w-5xl px-4">
+            <h3 class="text-2xl text-center text-gray-500 font-semibold mb-8 ">Conheça mais resorts</h3>
+
+            <div class="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-6 space-y-6 md:space-y-0">
+                <div class="relative md:col-span-2 md:row-span-2 rounded-lg overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Salinas Maragogi
+                    </div>
+                    <img src="../img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="../img/hotel1.jpg" class="w-full h-full object-fill" >
+                </div>
+
+                <div class="relative md:col-span-2 h-60 rounded-lg overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Salinas Maragogi
+                    </div>
+                    <img src="../img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="../img/hotel 2.jpg" class="w-full h-full object-fill">
+                </div>
+
+                <div class="relative md:h-25 rounded-lg = overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Grand Palladium Imbassaí Resort
+                    </div>
+                    <img src="../img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="../img/hotel 3.jpg" class="w-full h-full object-fill">
+                </div>
+
+                <div class="relative rounded-lg overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Grand Palladium Imbassaí Resort
+                    </div>
+                    <img src="../img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="../img/hotel 4.jpg" class="w-full h-full object-fill">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/grid photos-->
+    
+    <!--form register-->
+    <div class="container mx-auto max-w-5xl w-1/2 pt-32" >
+        <div>
+            <div class="border border-green-900 rounded-md mt-4 m-10">
+                <h2 class="text-white font-bold text-2xl bg-green-900 text-center p-4">Faça o seu cadastro</h2>
+                <form id="form">
+                    <div class="flex flex-col px-5 mt-2">
+                        <label  class="py-3" for="username">Nome Completo</label>
+                        <input id="username" class="py-3 flex-1 w-full text-gray-700 bg-gray-200 hover:bg-white border border-gray-200 outiline-none focus:bg-white rounded-md" type="text" placeholder="  Digite o seu nome...">
+                        <a id="error" class="hidden">Preencha um username!!!</a>
+                    </div>
+
+                    <div class="flex flex-col  px-5  mt-2">
+                        <label class="py-3" for="email">E-mail</label>
+                        <input id="email" class="py-3 flex-1 w-full text-gray-700 bg-gray-200 hover:bg-white border border-gray-200 outiline-none focus:bg-white rounded-md" type="email" placeholder="  Digite o seu e-mail...">
+                        <a id="error2" class="hidden">O email é obrigatório.</a>
+                    </div>
+
+                    <div class="flex flex-col px-5  mt-2">
+                        <label class="py-3" for="password">Senha</label>
+                        <input id="password" class="py-3 flex-1 w-full text-gray-700 bg-gray-200 hover:bg-white border border-gray-200 outiline-none focus:bg-white rounded-md" type="password" placeholder="  Digite sua senha...">
+                        <a id="error3" class="hidden">A senha é obrigatória.</a>
+                    </div>
+
+                    <div class="flex flex-col px-5  mt-2">
+                        <label class="py-3" for="password-confirmation">Confirmação de senha</label>
+                        <input id="password-confirmation" class=" py-3 flex-1 w-full text-gray-700 bg-gray-200 hover:bg-white border border-gray-200 outiline-none focus:bg-white rounded-md" type="password" placeholder="  Digite sua senha...">
+                        <a id="error4" class="hidden">A confirmação da senha é obrigatória.</a>
+                    </div>
+                    
+                    <div class="flex justify-center m-10">
+                        <button type="submit" class="bg-green-900 text-gray-200 rounded-md w-1/2 p-5 font-bold hover:bg-green-800">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--/form register-->
+    
+    <!--footer-->
+    <div class="border-t border-gray-200">
+        <div class="container mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+            <div class="font-black flex flex-col justify-center ">
+                <img src="../img/logo.png" class="h-16 w-16">
+                <h2>Js Turismo</h2>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a ><img src="../img/icon-facebook.png"></a>
+                <a><img src="../img/icon-instagram.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+    <!--/footer-->
+</body>
+<script src="main.js"></script>
+<script src="validacao.js"></script>
+</html>
